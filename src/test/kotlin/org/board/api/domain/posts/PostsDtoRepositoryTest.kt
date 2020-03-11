@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class PostsRepositoryTest(@Autowired val postsRepository: PostsRepository) {
+class PostsDtoRepositoryTest(@Autowired val postsRepository: PostsRepository) {
 
     @AfterEach
     fun cleanup() = postsRepository.deleteAll()
@@ -27,7 +27,6 @@ class PostsRepositoryTest(@Autowired val postsRepository: PostsRepository) {
         assertThat(posts.title).isEqualTo("title")
         assertThat(posts.content).isEqualTo("content")
         assertThat(posts.author).isEqualTo("author")
-
     }
 
 
