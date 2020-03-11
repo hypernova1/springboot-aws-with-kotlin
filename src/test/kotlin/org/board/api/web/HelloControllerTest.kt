@@ -10,10 +10,7 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers.*
 import org.hamcrest.Matchers.`is`
 
 @WebMvcTest
-class HelloControllerTest(
-        @Autowired
-        private val mockMvc: MockMvc
-) {
+class HelloControllerTest(@Autowired private val mockMvc: MockMvc) {
     @Test
     fun hello() {
         val hello = "hello"
