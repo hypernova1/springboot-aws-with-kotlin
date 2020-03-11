@@ -17,4 +17,6 @@ internal class HelloResponseDtoTest {
         assertThat(dto.name).isEqualTo(name)
         assertThat(dto.amount).isEqualTo(amount)
     }
+
+
 }

@@ -1,9 +1,10 @@
 package org.board.api.domain.posts
 
+import org.board.api.domain.BaseTimeEntity
 import javax.persistence.*
 
 @Entity
-class Posts() {
+class Posts() : BaseTimeEntity() {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
