@@ -23,6 +23,11 @@ class Posts() {
         this.author = builder.author
     }
 
+    fun update(title: String?, content: String?) {
+        this.title = title
+        this.content = content
+    }
+
     object Builder {
         var title: String? = null
             private set

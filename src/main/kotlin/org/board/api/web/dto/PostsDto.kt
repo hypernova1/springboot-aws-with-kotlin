@@ -40,4 +40,16 @@ class PostsDto {
         }
     }
 
+    class UpdateRequest(
+            val title: String? = null,
+            val content: String? = null
+    )
+
+    class Response(entity: Posts) {
+        val id: Long? = entity.id
+        val title: String? = entity.title
+        val content: String? = entity.content
+        val author: String? = entity.author
+    }
+
 }
